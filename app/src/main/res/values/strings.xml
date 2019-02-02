@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Contacts Assistant</string>
+    <string name="rec_hints">
+        What\'s the name? \n\n
+        What\'s he/she doing? \n\n
+        Where\'s he/she from? \n\n
+        Where did you meet? \n\n
+        Why could he/she be a good contact? \n\n
+        What did you talk about? \n\n
+        When will you talk again? \n\n
+        What will you talk about? \n\n
+    </string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="editor_insert_contact_failed">Insert of new contact failed. Not all required data added.</string>
+    <string name="editor_update_contact_failed">Update of contact failed. Not all required data added.</string>
+    <string name="editor_update_contact_successful">Update of contact successful</string>
+    <string name="delete_dialog_msg">Delete this contact?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_contact_successful">Contact deleted</string>
+    <string name="editor_delete_contact_failed">Error with deleting contact</string>
+</resources>

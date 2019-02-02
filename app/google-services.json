@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "375439294816",
+    "firebase_url": "https://contacts-assistant.firebaseio.com",
+    "project_id": "contacts-assistant",
+    "storage_bucket": "contacts-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375439294816:android:339241f59975743f",
+        "android_client_info": {
+          "package_name": "com.vonsebelin.android.contactsassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375439294816-nbfg31iidq933t5u49iqbsjc68uqdtkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Qt-OEQqXmXm2fyc5CvjM3SCwu7QyXv0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

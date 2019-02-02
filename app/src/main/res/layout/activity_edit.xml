@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".EditActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/business_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_tag_faces_blue_24dp"
+            />
+
+        <ImageView
+            android:id="@+id/take_new_bcard_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/edit_name"
+            android:src="@drawable/ic_add_a_photo_black_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_below="@id/business_card"
+            android:text="name" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:layout_below="@id/business_card"
+            android:inputType="textCapWords"
+            android:hint="Mister Mueller" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="EditFragmentTexts"
+            android:layout_below="@id/edit_name"
+            android:layout_alignParentLeft="true"
+            android:text="tags" />
+        <EditText
+            android:id="@+id/edit_tags"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:layout_below="@id/edit_name"
+            android:inputType="text"
+            android:hint="#blockchain" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:layout_below="@id/edit_tags"
+            android:layout_alignParentLeft="true"
+            android:text="phone + mail" />
+
+        <LinearLayout
+            android:id="@+id/contacts_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/edit_tags"
+            android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:inputType="phone"
+            android:hint="017612345678" />
+
+        <EditText
+            android:id="@+id/edit_mail"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:inputType="textEmailAddress"
+            android:hint="mister@gmail.com" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="EditFragmentTexts"
+            android:layout_below="@id/contacts_layout"
+            android:layout_alignParentLeft="true"
+            android:text="event + date" />
+
+        <LinearLayout
+            android:id="@+id/event_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/contacts_layout"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edit_event"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:inputType="textCapWords"
+            android:hint="Hannover Congress" />
+
+        <EditText
+            android:id="@+id/edit_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:inputType="date"
+            android:hint="01.09.2018" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="EditFragmentTexts"
+            android:layout_below="@id/event_layout"
+            android:layout_alignParentLeft="true"
+            android:text="street + city"/>
+        <LinearLayout
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/event_layout"
+            android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_street"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:layout_below="@id/event_layout"
+            android:inputType="textPostalAddress"
+            android:hint="Stresemannstr. 8"
+            />
+
+        <EditText
+            android:id="@+id/edit_city"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:inputType="textPostalAddress"
+            android:layout_below="@id/edit_street"
+            android:hint="Hamburg" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="EditFragmentTexts"
+            android:layout_below="@id/address_layout"
+            android:layout_alignParentLeft="true"
+            android:text="birthday" />
+        <EditText
+            android:id="@+id/edit_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="EditFragmentTexts"
+            android:inputType="date"
+            android:layout_below="@id/address_layout"
+            android:hint="01.09.2018" />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
